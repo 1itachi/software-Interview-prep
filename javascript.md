@@ -202,7 +202,7 @@ pending, fullfilled, rejected
 2. Const
 3. Event loop - Explain how it works
 4. Have you worked on any event handling in node.js -> my answer "No".
-5. 
+5. How to resolve the package.lock.json if it is corrupt.
 
 
 
