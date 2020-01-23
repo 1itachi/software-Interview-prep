@@ -13,7 +13,7 @@
 #### Demonstrate promises
 A promise can have following state:
 pending, fullfilled, rejected
-   
+
     let write = ()=>{
     return new Promise((resolve, reject)=>{
         fs.readFile('text2.txt', 'utf-8', (err,data)=>{
@@ -29,13 +29,13 @@ pending, fullfilled, rejected
 
 #### Demonstarte async await
     let test = async()=>{
-    
+
         let data = await write();
-    
+
         console.log(data);
-    
+
         }
-    
+
     test();
     console.log("here");
 
@@ -46,10 +46,10 @@ pending, fullfilled, rejected
     setTimeout(() => {
     resolve("foo");
      }, 100);
-    }); 
+    });
 
-    Promise.all([p1, p2, p3]).then(values => { 
-     console.log(values); // [3, 1337, "foo"] 
+    Promise.all([p1, p2, p3]).then(values => {
+     console.log(values); // [3, 1337, "foo"]
     });
 
 
@@ -81,12 +81,12 @@ pending, fullfilled, rejected
     console.log(inc1);
 
     reduce (single output value)
-    let arr2 = [3,5,6,9,11] 
+    let arr2 = [3,5,6,9,11]
     let red1= arr2.reduce((accumulator, currentvalue)=>{
     return accumulator+currentvalue;
     },18)
 
-    let arr3 = ["cat", "dog","camel"]; 
+    let arr3 = ["cat", "dog","camel"];
     let red2= arr3.reduce((accumulator, currentvalue)=>{
     return accumulator+currentvalue;
     })
@@ -98,12 +98,12 @@ pending, fullfilled, rejected
     var is function scope
     let is block scope
     hoisting - the process where all declaration of var are made ta the top.
-    
+
     for(var i=0; i<=100; i++){
         //does something
     }
     console.log(i);//i = 101
-    
+
     for(let i=0; i<=100; i++){
         //does something
     }
@@ -112,10 +112,10 @@ pending, fullfilled, rejected
 
 #### event loop
 
-    To state it bluntly, an event loop is that entity which pulls first elemnet in the event loop and places it on the 
+    To state it bluntly, an event loop is that entity which pulls first elemnet in the event loop and places it on the
     function execution stack whenever the function stack becomes empty.
     take SetTimeout for example-> when time out is called it is placed in to the stack-> set Time out calls the web Api provided to us
-    by the browser, set the timer. Once completed, the callback function is placed on to the event queue. Once the function call stack 
+    by the browser, set the timer. Once completed, the callback function is placed on to the event queue. Once the function call stack
     is empty, event loop takes the first element on the queue to the stack. This is event loop.
 
 
@@ -125,15 +125,15 @@ pending, fullfilled, rejected
     map.set("bob", 2);
     map.set("charlie", 4);
     map.set("alice", 5);
-    
+
     for(let [key,value] of map){
     console.log(`${key} is the key and ${value} is the value.`)
     }
-    
+
     for(let value of map.values()){
         console.log(`${value} is the value.`)
     }
-    
+
     let ele = map.get("bob");
     console.log(ele);
     console.log(map.has("bob"));
@@ -184,7 +184,7 @@ pending, fullfilled, rejected
         return addSecond;
     }
     var addClosure = add(1);
-    
+
     console.log(addClosure(4)); //prserves one ad adds 4 to it
 
 
@@ -196,6 +196,53 @@ pending, fullfilled, rejected
     anything which is not in isolaion is integration test. (two or more modules).
 
 
+1. What are the data types in javascript?
+=> 6 basic types:
+  Number
+  BigInt  -> n in the end  
+  String
+  Boolean
+  null
+  undefined
+
+2. push and unshift?
+=> push adds to end of an array.
+  unshift adds to the begining of the array.
+  or use spread operator.
+
+
+3. bind operator? explain.
+=>
+
+
+4. call, apply and bind.
+=> In js, it is not necessary for objects to have its own properties and methods. We can bind objects to functions in following way:  
+
+var obj = {num:2}
+              var addToThis = function(a,b,c){
+                return this.num + a + b + c;
+              }
+
+              call:
+              console.log(addToThis.call(obj,3,2,3));   // 10
+
+              apply:
+              var arr[1,2,3]  
+              console.log(addToThis.apply(obj,arr)) //8
+
+              bind:
+
+              var bound = addToThis.bind(obj);
+
+              console.log(bound(1,2,3))   //8
+
+5. Callback higher order functions?
+=> yes, a function can be passed to other function as argument.
+
+6. REPL?
+=> read-eval-print-loop , it is quick and easy way to test simple node.js/javascript.
+
+
 #### Questions asked to me in interviews
 
 1. Promises and Async await, lets say I have a promise add which return a promise, how to handle     in async await.
@@ -203,7 +250,3 @@ pending, fullfilled, rejected
 3. Event loop - Explain how it works
 4. Have you worked on any event handling in node.js -> my answer "No".
 5. How to resolve the package.lock.json if it is corrupt.
-
-
-
-
