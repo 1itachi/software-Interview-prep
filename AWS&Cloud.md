@@ -6,7 +6,6 @@
   context=> When Lambda runs your function, it passes a context object to the handler.
   This object provides methods and properties that provide information about the invocation, function, and execution environment.
 
-
 #### How do you ensure that your api calls are not being exposed to outside world?
     One way is to configure the authorizer property of API gateway. Authorizer is nothing but a lambda functions
     which authorizes the incoming request.
@@ -21,6 +20,20 @@
       Polling inherently introduces some latency in message delivery in SQS unlike SNS where messages are immediately pushed to subscribers.
 
 
+#### Route table
+     A route table contains a set of rules, called routes, that are used to determine where network traffic from your subnet or gateway is directed.
+
+#### Docker & VM
+      VM- individual OS and isolate systems. Hypervisor used.
+      Docker- Shared OS and isolate applications. Docker Daemon used.
+
+#### Kubernetes
+      Container orchestration - manage docker containers (Docker swarm)
+                              - Good Auto scaling (Kubernetes) -supports AWS/GCP/AZURE
+      Can run 1000's of instances, upgrade or rollback
+
+#### subnet
+        When we create VPC, it spans entire availability zones in the region. We can add one or more subnets in each vpc. Subnet resides entirely in single zone and cannot span zones.
 
 1. How to publsih message from lambda to sns?
 => const params = {
@@ -37,6 +50,13 @@ const publishPromise = sns.publish(params).promise();
     QueueUrl: QUEUE_URL
   };
   sqs.sendMessage(params, function(err,data){});
+
+
+3. Three basic types of cloud services by aws?
+=> compute(lambda, elastic bean stalk) , Storage(s3) , Networking(VPC, Route53)
+
+4. CloudFormation anatomy:
+=>
 
 
 #### Questions asked

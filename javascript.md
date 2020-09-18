@@ -112,7 +112,7 @@ pending, fullfilled, rejected
 
 #### event loop
 
-    To state it bluntly, an event loop is that entity which pulls first elemnet in the event loop and places it on the
+    To state it bluntly, an event loop is that entity which pulls first element in the event queue and places it on the
     function execution stack whenever the function stack becomes empty.
     take SetTimeout for example-> when time out is called it is placed in to the stack-> set Time out calls the web Api provided to us
     by the browser, set the timer. Once completed, the callback function is placed on to the event queue. Once the function call stack
@@ -157,7 +157,7 @@ pending, fullfilled, rejected
     if it an object we can add or delete elements but cannot reassign
 
 #### undefined and null
-    undeifned-> when u define a variable and not assign a value
+    undefined-> when u define a variable and not assign a value
     null -> we assign to clean up
     typeof(undefined) is undefined but typeof(null) is object
 
@@ -165,17 +165,17 @@ pending, fullfilled, rejected
     resolves ambuiguity of this keyword. Instead of assigning to window object, assigns to the current scope.
 
 #### prototypal inheritance
-    every object has a property called protoype, which can be used to add methods. When we create other object with these object.
-    The newly created object automitically inherits the property of the parent but not by inluding in itself but by accessing the parent method.
-    This makes the obejcts lighter
+    every object has a property called prototype, which can be used to add methods. When we create other object with these object.
+    The newly created object automatically inherits the property of the parent but not by including in itself but by accessing the parent method.
+    This makes the objects lighter.
 
 #### function declaration and function expression
-    function declaration is a function , whereas function expression is an anonymous function saved in a varibale.
+    function declaration is a function , whereas function expression is an anonymous function saved in a variable.
 
 
 #### closure and how to use it
     Closures are nothing but functions with preserved data.
-    simple example is a function that uses varibale declared outside is accessible inside.
+    simple example is a function that uses variable declared outside is accessible inside.
     simple example:::
     var add = (first)=>{
         var addSecond = (second)=>{
@@ -211,11 +211,7 @@ pending, fullfilled, rejected
   or use spread operator.
 
 
-3. bind operator? explain.
-=>
-
-
-4. call, apply and bind.
+3. call, apply and bind.
 => In js, it is not necessary for objects to have its own properties and methods. We can bind objects to functions in following way:  
 
 var obj = {num:2}
@@ -236,16 +232,32 @@ var obj = {num:2}
 
               console.log(bound(1,2,3))   //8
 
-5. Callback higher order functions?
+4. Callback higher order functions?
 => yes, a function can be passed to other function as argument.
 
-6. REPL?
+5. REPL?
 => read-eval-print-loop , it is quick and easy way to test simple node.js/javascript.
+
+
+6. javascript objects and oops.
+=>
+
+
+7. Prototype Inheritence
+=>
+
+8. Soap and Rest.
+=>
+
+
+9. finally in javascript
+
+
 
 
 #### Questions asked to me in interviews
 
-1. Promises and Async await, lets say I have a promise add which return a promise, how to handle     in async await.
+1. Promises and Async await, lets say I have a promise add which return a promise, how to handle in async await.
 2. Const
 3. Event loop - Explain how it works
 4. Have you worked on any event handling in node.js -> my answer "No".

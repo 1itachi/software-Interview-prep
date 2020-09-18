@@ -1,0 +1,55 @@
+Introduction::
+
+1. System Design is using concepts from computer science such as networks,
+   distributed systems and parallel computing to build large scale system.
+2. Request on the server should never fail, even if there is hardware failure.
+   We should have multiple copies of the same server in the system.
+3. We have to make sure that the information on each server is the same.
+4. We have to distribute the load fairly. This ensures that our servers are not overloaded.
+5. We must ensure that requests are responded to in timely fashion. This requires
+   optimization of networks and databases.
+
+Basics:
+
+To scale: 1. buy bigger machines(vertical scaling)  2. buy more machines(Horizontal scaling)
+          The ability to handle more requests by buying more machines or buying
+          bigger machines is called scalability.
+Vertical Scaling                          Horizontal scaling
+1. No load balancer                      1. We need a load balancer
+2. Resilient(can be redirected           2. Single point of failure
+   to other servers if one fails)
+3. Netwrok calls(remote procedure calls  3. Interprocess communications are fast.  
+  slow)                       
+4. Data inconsistency                    4. Consistent  
+5. Sacles well(can add any number)       5. Hardware limit
+
+
+We use both. i.e hybrid solutin-taking good qualities of both  
+(which is horizontal scaling).
+
+
+Pizza shop:
+
+1. Optimize process and increase through put using the same resource. - vertical scaling
+2. Avoid single points of failure. Hire more chefs, which maps to horizontal scaling.
+3. Route all pizza orders to chefs who specialize in that, similarly route all Orders
+   of garlic bread to chef2. This makes system simpler, anytime there is change in
+   pizza properties notify only chef1, similarly any change in garlic has to be notified
+   only to chef2. For status of order as well. We can actually make a team. 3chef2 7chef1.
+   Diving responsibility is micro service architecture.
+4. Distributed systems. (You don't want to put eggs in all baskets). Any order which is
+   local to this systems can be served by that systems.
+5. The thing that routes request in smart way is called load balancer. It can make intelligent
+    business decisions. (parameter: how fast can a shop deliver the pizza)
+6. Decoupling the systems- separate the concerns of the system. Delivery agent is not
+    is not concerned whether the order is pizza or burger. --future proof
+7. logging and metrics.
+8. Extensible    
+
+
+High level system design & low level system Design:
+1. low level system design: how to code, making objects, classes, functions etc.
+2. High level is talking about how to create and handle resources.
+
+Consistent Hashing
+Consistent hashing can be used to route the requests to servers (m%n)

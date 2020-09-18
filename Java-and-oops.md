@@ -4,7 +4,7 @@
 
 
 2. Explain static function.
-=> A static function is a member function of a class that can be called even when an object of the class is not initialized.
+=> A static function is a member function of a class that can be called even when an  object of the class is not initialized.
    A static function cannot access any variable of its class except for static variables.
 
 
@@ -89,13 +89,10 @@
 
 
 20. Difference between Abstract classes and Interfaces? with example.
-=> A class can extend one abstract class but can implement many interfaces.
-
-
+=>  A class can extend one abstract class but can implement many interfaces.
 
 21. Are methods in interface abstract?
 =>  Yes.
-
 
 22. can abstract class have non abstract methods?
 => Yes.
@@ -116,13 +113,13 @@
     A class can implement many interfaces.    
 
 27. What is polymorphism with example?
-=>     Polymorphism: Multiple methods with same name and different signatures. Ex : Method overloading(COMPILE time) and Overriding (inheritence-> run time).
+=>     Polymorphism: Multiple methods with same name and different signatures. Ex : Method overloading(COMPILE time) and Overriding (inheritance-> run time).
 
 28. What is run time polymorphism or dynamic method dispatch?
 => Method overriding is run time polymorphism.
 
 29. What is upcasting? Give an example?
-=>  Assigning instace object of child to a parent class variable.
+=>  Assigning instance object of child to a parent class variable.
     ex: A is a parent and B is the child then,
         A a = new B();
 
@@ -134,8 +131,10 @@
 => No
 
 
-32. What is multiple inheritance, does java support it?
-=>  Multiple inheritence is smae child having more than one parent. No, it is not supported directly but supported through interfaces.
+32. What is multiple inheritance, does java support it? why?
+=>  Multiple inheritance is same child having more than one parent. No, it is not supported directly but supported through interfaces.
+Because interfaces specify only what the class is doing, not how it is doing it.
+The problem with multiple inheritance is that two classes may define different ways of doing the same thing, and the subclass can't choose which one to pick.
 
 33. What is static? Give example.
 =>  In Java, a static member is a member of a class that isn't associated with an instance of a class.
@@ -149,6 +148,7 @@
 =>  During compile time jvm takes the .java file and compiles it to .class file. (byte code)
     Runtime is normal execution phase.
 
+
 #### Questions asked
   1. What is encapsulation.
   2. What is abstraction.
@@ -156,3 +156,6 @@
   4. What is final in class and methods.
   5. Explain SOLID principles.
   6. Difference between abstract class and interface.
+
+  //design Questions
+  //parking lot problem
