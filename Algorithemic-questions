@@ -1,0 +1,3 @@
+Quicksort:
+Picks a random element as pivot and then swaps values in the array such that all elements less than pivot appear before elements greater than pivot.
+This gives partial sort. Then it recursively sorts left and right parts in the similar fashion

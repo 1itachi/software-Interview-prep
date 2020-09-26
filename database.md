@@ -64,8 +64,6 @@ stored in database in separate tables. can be queried using Structured Query lan
 
 
 
-
-
 #### Questions asked:
 
   1. How do you scale a database? Sql or No-SQL

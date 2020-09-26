@@ -1,0 +1,29 @@
+Understand this concept properly.
+Resource- CS 50 & William Fiset on youtube, Cracking the coding interview
+
+
+Big-0 : Big 0 Notation gives the upper bound of the complexity in the worst case, Helping to quantify performance
+        as the input size becomes arbitrarily large.
+
+Omega - lower bound
+
+theta - tight bound
+
+Classic Exmaples:
+
+Finding all subsets of a set - O(2^n)
+Finding all permutations - O(n!)
+Sorting using merge sort - O(nlog(n))
+Iterating over all the cells in a matrix of size n by m - O(nm)
+
+
+Space complexity:
+
+Create an array on n size - O(n);
+Create an 2d array of n*n - O(n^2);
+create a recursion (call stack) - O(n);
+No Data structure - O(1);
+
+
+Note:
+Sidawdze gets halved - most likely O(log n).
