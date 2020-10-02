@@ -3,9 +3,10 @@
    HashSet: Item is not added.
 
 
-2. Explain static function.
+2. Explain static function and static variable.
 => A static function is a member function of a class that can be called even when an  object of the class is not initialized.
    A static function cannot access any variable of its class except for static variables.
+   Static variable has to be called with class and not object. Changing static variable changes the its value for all objects.
 
 
 3. Explain oops concept.
@@ -100,6 +101,8 @@
 23. Visibility of abstract class and interface?
 => Abstract class can have any visibility public, private and protected.
   interface can have only public or none.
+  Abstract methods have to implemented by all child classes inheriting the abstract class.
+
 
 24. Is instance of class created at runtime for abstract class?
 => Yes.  (implicitly). but we cannot create an instance.
@@ -148,7 +151,10 @@ The problem with multiple inheritance is that two classes may define different w
 =>  During compile time jvm takes the .java file and compiles it to .class file. (byte code)
     Runtime is normal execution phase.
 
+36. Aggregation and Composition
+=> Aggregation is "has a" (uses many) relationship. For ex: If fleet has a spaceships, destroying fleet will not effect spaceships. Each exists independent of each other.
 
+Composition: Ex: spaceship owns an engine. Engine cannot exist with out spaceship.
 
 
 #### Questions asked
