@@ -149,6 +149,8 @@ The problem with multiple inheritance is that two classes may define different w
     Runtime is normal execution phase.
 
 
+
+
 #### Questions asked
   1. What is encapsulation.
   2. What is abstraction.
