@@ -1,3 +1,6 @@
 1. OOP approach for chess game.
 2. Hotel reservation system
 3. Parking lot problem
+
+
+https://www.youtube.com/watch?v=FLmBqI3IKMA - design patterns to know

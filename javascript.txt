@@ -144,6 +144,12 @@ pending, fullfilled, rejected
     no client data is stored in server.- stateless.
     cacheable- clients can cache response to improve performance
 
+    example:
+    POST request to /user/123 creates a user with the ID 123 using the body data
+    PUT request to /user/123 updates user 123 with the body data
+    GET request to /user/123 returns the details of user 123
+    DELETE request to /user/123 deletes user 123
+
 
 #### == and ===  
     both are comparison operators
@@ -186,7 +192,6 @@ pending, fullfilled, rejected
     var addClosure = add(1);
 
     console.log(addClosure(4)); //prserves one ad adds 4 to it
-
 
 
 #### debugging
@@ -238,19 +243,24 @@ var obj = {num:2}
 5. REPL?
 => read-eval-print-loop , it is quick and easy way to test simple node.js/javascript.
 
-
-6. javascript objects and oops.
-=>
-
-
 7. Prototype Inheritence
-=>
+=> When it comes to inheritance, JavaScript only has one construct: objects. Each object has a private property which holds a link to another object called its prototype. That prototype object has a prototype of its own, and so on until an object is reached with null as its prototype. By definition, null has no prototype, and acts as the final link in this prototype chain.
 
 8. Soap and Rest.
-=>
+=> Soap uses XML for all messages, transport independent (REST requires HTTP), built in error handling
 
 
 9. finally in javascript
+  The finally statement lets you execute code, after try and catch, regardless of the result. (need to use either catch or finalize)
+
+10. Anonymous Function:
+=> Anonymous function is a function without a name. Can be assigned to variable or passed as an argument.
+
+11. Event emitter, event handlers
+=>  Event emitter: Many objects in Node emit emits for example fs.readStream emits a event when the file is opened. EventEmitter class lies in events module. Provides multiple properties
+                    like "on" , "emit". New listener is added=> newListener event is fired, removed=> removeListener event is fired, error => emits error event
+    Event Handlers: They are javascript code that are not added inside script tag but inside html tags, that execute js when something happens.
+                    eg:  onClick= "alert(hello!)"  syntax: name_of_handler = "Javscript code here"
 
 
 
@@ -260,5 +270,5 @@ var obj = {num:2}
 1. Promises and Async await, lets say I have a promise add which return a promise, how to handle in async await.
 2. Const
 3. Event loop - Explain how it works
-4. Have you worked on any event handling in node.js -> my answer "No".
+4. Have you worked on any event handling in node.jsx`
 5. How to resolve the package.lock.json if it is corrupt.

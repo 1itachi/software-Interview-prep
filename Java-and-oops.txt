@@ -69,7 +69,7 @@
 =>  Stack => stack memory used by one thread execution and not available for other threads.
               Follows LIFO.
     heap => is used by all parts of the application.
-              Memory management is based on generation asscciated with each object.
+              Memory management is based on generation associated with each object.
 
 
 17. ArrayList and Vector?
