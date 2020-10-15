@@ -1,0 +1,6 @@
+1. HashMap and HashTable
+=> HashMap is non synchronized, not-thread safe. HashTable is synchronized.
+   HashMap allows one null key and multiple null value. HashTable doesn't allow null key or values
+   HashMap is improvement over HashTable.
+
+2. Directed acyclic graph and binary search tree

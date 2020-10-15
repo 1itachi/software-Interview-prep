@@ -75,7 +75,7 @@
 17. ArrayList and Vector?
 =>  ArrayList is not synchronized. Vector is synchronized.
     ArrayList is not thread safe.  Vector is thread safe.
-    Upon insertion, arraylist increase by 50% whereas vector doubles its size.  
+    Upon insertion, arraylist increase by 50% whereas vector doubles its size.
 
 18. HashMap and HashTable?
 =>  HashMap is not synchronized and not thread safe.
@@ -113,7 +113,7 @@
 26. What is the difference between class extending the abstract class and a
     class implementing the interface.
 => A class can extend only one abstract class, inheritance.
-    A class can implement many interfaces.    
+    A class can implement many interfaces.
 
 27. What is polymorphism with example?
 =>     Polymorphism: Multiple methods with same name and different signatures. Ex : Method overloading(COMPILE time) and Overriding (inheritance-> run time).
@@ -155,6 +155,10 @@ The problem with multiple inheritance is that two classes may define different w
 => Aggregation is "has a" (uses many) relationship. For ex: If fleet has a spaceships, destroying fleet will not effect spaceships. Each exists independent of each other.
 
 Composition: Ex: spaceship owns an engine. Engine cannot exist with out spaceship.
+
+
+
+
 
 
 #### Questions asked

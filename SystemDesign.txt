@@ -1,4 +1,4 @@
-Introduction::
+  Introduction::
 
 1. System Design is using concepts from computer science such as networks,
    distributed systems and parallel computing to build large scale system.
@@ -18,13 +18,13 @@ Vertical Scaling                          Horizontal scaling
 1. No load balancer                      1. We need a load balancer
 2. Resilient(can be redirected           2. Single point of failure
    to other servers if one fails)
-3. Netwrok calls(remote procedure calls  3. Interprocess communications are fast.  
-  slow)                       
-4. Data inconsistency                    4. Consistent  
+3. Netwrok calls(remote procedure calls  3. Interprocess communications are fast.
+  slow)
+4. Data inconsistency                    4. Consistent
 5. Sacles well(can add any number)       5. Hardware limit
 
 
-We use both. i.e hybrid solutin-taking good qualities of both  
+We use both. i.e hybrid solutin-taking good qualities of both
 (which is horizontal scaling).
 
 
@@ -44,7 +44,7 @@ Pizza shop:
 6. Decoupling the systems- separate the concerns of the system. Delivery agent is not
     is not concerned whether the order is pizza or burger. --future proof
 7. logging and metrics.
-8. Extensible    
+8. Extensible
 
 
 High level system design & low level system Design:

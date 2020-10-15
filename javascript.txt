@@ -1,4 +1,8 @@
 
+
+Remember everything in an array is a object
+
+
 #### Demonstrate the call back
 
     const write = (err,data)=>{
@@ -151,7 +155,7 @@ pending, fullfilled, rejected
     DELETE request to /user/123 deletes user 123
 
 
-#### == and ===  
+#### == and ===
     both are comparison operators
     == compares value and not types
     === compare value and types
@@ -204,7 +208,7 @@ pending, fullfilled, rejected
 1. What are the data types in javascript?
 => 6 basic types:
   Number
-  BigInt  -> n in the end  
+  BigInt  -> n in the end
   String
   Boolean
   null
@@ -217,7 +221,7 @@ pending, fullfilled, rejected
 
 
 3. call, apply and bind.
-=> In js, it is not necessary for objects to have its own properties and methods. We can bind objects to functions in following way:  
+=> In js, it is not necessary for objects to have its own properties and methods. We can bind objects to functions in following way:
 
 var obj = {num:2}
               var addToThis = function(a,b,c){
@@ -228,7 +232,7 @@ var obj = {num:2}
               console.log(addToThis.call(obj,3,2,3));   // 10
 
               apply:
-              var arr[1,2,3]  
+              var arr[1,2,3]
               console.log(addToThis.apply(obj,arr)) //8
 
               bind:
@@ -244,7 +248,14 @@ var obj = {num:2}
 => read-eval-print-loop , it is quick and easy way to test simple node.js/javascript.
 
 7. Prototype Inheritence
-=> When it comes to inheritance, JavaScript only has one construct: objects. Each object has a private property which holds a link to another object called its prototype. That prototype object has a prototype of its own, and so on until an object is reached with null as its prototype. By definition, null has no prototype, and acts as the final link in this prototype chain.
+=> When it comes to inheritance, JavaScript only has one construct: objects.
+Each object has a private property which holds a link to another object called its prototype.
+That prototype object has a prototype of its own, and so on until an object is reached with null as its prototype.
+By definition, null has no prototype, and acts as the final link in this prototype chain.
+It is an object which is attached to each object when created (obj.__proto__)
+ex: Array ----> Object ----> null (prototypal chain)
+
+
 
 8. Soap and Rest.
 => Soap uses XML for all messages, transport independent (REST requires HTTP), built in error handling
@@ -261,7 +272,6 @@ var obj = {num:2}
                     like "on" , "emit". New listener is added=> newListener event is fired, removed=> removeListener event is fired, error => emits error event
     Event Handlers: They are javascript code that are not added inside script tag but inside html tags, that execute js when something happens.
                     eg:  onClick= "alert(hello!)"  syntax: name_of_handler = "Javscript code here"
-
 
 
 

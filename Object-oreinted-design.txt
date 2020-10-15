@@ -4,3 +4,33 @@
 
 
 https://www.youtube.com/watch?v=FLmBqI3IKMA - design patterns to know
+
+
+Design Pattern:
+
+### Singleton: Ensures only one instance of the class is created.
+public class SingleObject {
+
+   //create an object of SingleObject
+   private static SingleObject instance = new SingleObject();
+
+   //make the constructor private so that this class cannot be
+   //instantiated
+   private SingleObject(){}
+
+   //Get the only object available
+   public static SingleObject getInstance(){
+      return instance;
+   }
+
+
+### MVC
+
+Model: All data related logic
+View : UI logical
+Controller: Controllers act as an interface between Model and View components to
+ process all the business logic and incoming requests, manipulate data using the
+  Model component and interact with the Views to render the final output
+
+
+  
